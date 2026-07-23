@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pcfx-videotoolkit"
+version = "0.1.0"
+description = "Universal PC-FX RAINBOW FMV extractor and encoder"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "GPL-2.0-or-later" }
+dependencies = [
+    "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+ffmpeg = ["imageio-ffmpeg>=0.4"]
+dev = ["pytest>=7"]
+
+[project.scripts]
+pcfx-fmv = "pcfx_videotoolkit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
