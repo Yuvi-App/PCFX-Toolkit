@@ -430,3 +430,12 @@ FodyWeavers.xsd
 /tests
 /tools
 /src/pcfx_toolkit.egg-info
+
+# pcfx-toolkit
+build/
+dist/
+*.egg-info/
+__pycache__/
+.pytest_cache/
+/VideoToolkit/tools
+/VideoToolkit/tests
