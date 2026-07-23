@@ -428,3 +428,5 @@ FodyWeavers.xsd
 *.msm
 *.msp
 /tests
+/tools
+/src/pcfx_toolkit.egg-info
